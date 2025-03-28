@@ -1,0 +1,39 @@
+# This is a sample configuration YAML file
+
+application:
+  name: SampleApp
+  version: 1.0.0
+  description: A simple app to demonstrate YAML syntax
+
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: secretpassword
+  database_name: sample_db
+
+logging:
+  level: debug
+  format: json
+  enabled: true
+  file: logs/app.log
+
+features:
+  authentication: true
+  email_notifications: false
+  dark_mode: true
+
+users:
+  - name: Alice
+    email: alice@example.com
+    role: admin
+  - name: Bob
+    email: bob@example.com
+    role: user
+
+# List of supported languages
+languages:
+  - english
+  - spanish
+  - french
+  - german
